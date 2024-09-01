@@ -1,0 +1,39 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<div class="login-container">
+        <div *ngIf="isLoginMode">
+          <h1>LOGIN</h1>
+          <form (ngSubmit)="onSubmitLogin()">
+            <div class="form-group">
+              <label for="username">Username or Email:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" (click)="onSubmitLogin()">Login</button>
+            </div>
+            <div class="form-group">
+              <p>Don't have an account? <a href="#" (click)="toggleMode()">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+      
+        <div *ngIf="!isLoginMode">
+          <h2>REGISTER</h2>
+          <form id="registration-form" (ngSubmit)="onSubmitRegister()">
+            <input type="text" id="display-name" placeholder="Display Name" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="#" (click)="toggleMode()">Log In</a></p>
+          </form>
+        </div>
+</div>
