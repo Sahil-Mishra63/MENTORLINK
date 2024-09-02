@@ -1,0 +1,129 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f5f6f8; 
+    color: #333; 
+}
+header { 
+    background: linear-gradient(135deg, #0056b3, #003d7a); 
+    color: #fff; 
+    padding: 20px 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+header h1 { 
+    margin: 0; 
+    font-size: 28px; 
+}
+header .nav-buttons { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+header .nav-buttons button, header .profile-pic { 
+    padding: 12px 25px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+header .nav-buttons button:hover, header .profile-pic:hover { 
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+header .profile-pic { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+}
+header .profile-pic svg { 
+    width: 20px; 
+    height: 20px; 
+    fill: #007bff;
+}
+section { 
+    padding: 40px 20px; 
+    text-align: center; 
+}
+section h2 { 
+    font-size: 32px; 
+    margin-bottom: 30px; 
+    color: #222; 
+    font-weight: 600; 
+    font-family: 'Roboto', sans-serif; /* Applying the new font */
+}
+.problem-container { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.problem { 
+    border: 1px solid #e1e4e8; 
+    border-radius: 8px; 
+    background-color: #fff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    transition: box-shadow 0.3s, transform 0.3s;
+    padding: 20px;
+}
+.problem .logo { 
+    width: 60px; 
+    height: 60px; 
+    margin: 0 auto 20px; 
+}
+.problem h3 { 
+    margin: 20px 0; 
+    font-size: 22px; 
+    color: #333; 
+    font-weight: 500; 
+}
+.problem p { 
+    margin: 0 20px 20px; 
+    color: #666; 
+    font-size: 16px; 
+}
+.problem button { 
+    display: block; 
+    width: calc(100% - 40px); 
+    margin: 0 20px 20px; 
+    padding: 12px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+.problem button:hover { 
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .problem-container { 
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    section h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    .problem {
+        padding: 10px;
+    }
+    .problem .logo {
+        width: 50px;
+        height: 50px;
+    }
+}

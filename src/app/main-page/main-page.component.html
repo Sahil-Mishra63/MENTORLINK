@@ -1,1 +1,52 @@
-<p>main-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose your problem and find relevant guidance on health, financial, educational, and personal issues with Mentor Link.">
+    <meta name="keywords" content="mentor, community, health, financial, educational, personal, guidance">
+    <title>Choose Your Problem</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+</head>
+<body>
+    <header>
+            <h1>MentorLink</h1>
+        <div class="nav-buttons">
+            <button (click)="goToProfilePage()">Community</button>
+            <button onclick="window.location.href='find-mentor.html'">Find Mentor</button>
+            <div class="profile-pic" (click)="goToProfilePage()" routerLink="/profile">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.87 0-7 3.13-7 7h2c0-3.31 2.69-6 6-6s6 2.69 6 6h2c0-3.87-3.13-7-7-7z"/></svg>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2>Choose Your Problem</h2>
+        <div class="problem-container">
+            <div class="problem">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <h3>Health</h3>
+                <p>Address health-related issues and find the right guidance for your well-being.</p>
+                <button>Find Peer</button>
+            </div>
+            <div class="problem">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3.5c-4.67 0-8.5 3.83-8.5 8.5S7.33 20.5 12 20.5 20.5 16.67 20.5 12 16.67 3.5 12 3.5zM12 18c-2.21 0-4-1.79-4-4h2c0 1.1.9 2 2 2s2-.9 2-2h2c0 2.21-1.79 4-4 4z"/></svg>
+                <h3>Financial</h3>
+                <p>Get advice on managing finances, budgeting, and financial planning here.</p>
+                <button>Find Peer</button>
+            </div>
+            <div class="problem">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14v2H5V3zm0 4h14v2H5V7zm0 4h14v2H5v-2z"/></svg>
+                <h3>Educational</h3>
+                <p>Seek help with academic challenges, career planning, and learning strategies.</p>
+                <button>Find Peer</button>
+            </div>
+            <div class="problem">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.87 0-7 3.13-7 7h2c0-3.31 2.69-6 6-6s6 2.69 6 6h2c0-3.87-3.13-7-7-7z"/></svg>
+                <h3>Personal</h3>
+                <p>Find support for personal growth, relationships, and life challenges all here.</p>
+                <button>Find Peer</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
