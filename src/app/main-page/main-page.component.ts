@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class MainPageComponent {
   constructor(private router: Router) {}
 
-  goToProfilePage(pageName: string) {
+  goToPage(pageName: string) {
     this.router.navigate([pageName]);
   }
 }

@@ -6,7 +6,7 @@ body {
     color: #333; 
 }
 header { 
-    background: linear-gradient(135deg, #0056b3, #003d7a); 
+    background: linear-gradient(135deg, #00712D, #00712D);
     color: #fff; 
     padding: 20px 40px; 
     display: flex; 
@@ -25,7 +25,8 @@ header .nav-buttons {
 }
 header .nav-buttons button, header .profile-pic { 
     padding: 12px 25px; 
-    background-color: #007bff; 
+    // background-color: #817f7f; 
+    background-color: #A6B37D;
     color: #fff; 
     border: none; 
     border-radius: 5px; 
@@ -34,7 +35,7 @@ header .nav-buttons button, header .profile-pic {
     transition: background-color 0.3s, transform 0.2s;
 }
 header .nav-buttons button:hover, header .profile-pic:hover { 
-    background-color: #0056b3; 
+    background-color: #D5ED9F; 
     transform: scale(1.05);
 }
 header .profile-pic { 
@@ -54,7 +55,8 @@ header .profile-pic svg {
 }
 section { 
     padding: 40px 20px; 
-    text-align: center; 
+    text-align: center;
+    background-color: #FFFBE6; 
 }
 section h2 { 
     font-size: 32px; 
@@ -62,6 +64,7 @@ section h2 {
     color: #222; 
     font-weight: 600; 
     font-family: 'Roboto', sans-serif; /* Applying the new font */
+    filter: drop-shadow(5px 6px 7px green);
 }
 .problem-container { 
     display: grid; 
@@ -100,7 +103,8 @@ section h2 {
     width: calc(100% - 40px); 
     margin: 0 20px 20px; 
     padding: 12px; 
-    background-color: #007bff; 
+    // background-color: #007bff;
+    background-color: #FF9100; 
     color: #fff; 
     border: none; 
     border-radius: 5px; 
@@ -109,7 +113,8 @@ section h2 {
     transition: background-color 0.3s, transform 0.2s;
 }
 .problem button:hover { 
-    background-color: #0056b3; 
+    // background-color: #0056b3;
+    background-color: #E85C0D; 
     transform: scale(1.05);
 }
 @media (max-width: 768px) {

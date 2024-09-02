@@ -10,6 +10,7 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ChatPageComponent } from './chat-page/chat-page.component';
 import { FormPageComponent } from './form-page/form-page.component';
+import { FindMentorComponent } from './find-mentor/find-mentor.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormPageComponent } from './form-page/form-page.component';
     AdminPageComponent,
     ProfilePageComponent,
     ChatPageComponent,
-    FormPageComponent
+    FormPageComponent,
+    FindMentorComponent
   ],
   imports: [
     BrowserModule,

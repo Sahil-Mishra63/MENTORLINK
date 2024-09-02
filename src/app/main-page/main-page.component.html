@@ -7,7 +7,7 @@
         <button>Community</button>
         <button>Find Mentor</button>
         <!-- <button (click)="goToProfilePage('profile')">click</button> -->
-        <div class="profile-pic" (click)="goToProfilePage('profile')">
+        <div class="profile-pic" (click)="goToPage('profile')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
                     d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.87 0-7 3.13-7 7h2c0-3.31 2.69-6 6-6s6 2.69 6 6h2c0-3.87-3.13-7-7-7z" />
@@ -25,7 +25,7 @@
             </svg>
             <h3>Health</h3>
             <p>Address health-related issues and find the right guidance for your well-being.</p>
-            <button>Find Peer</button>
+            <button (click)="goToPage('find')">Find Peer</button>
         </div>
         <div class="problem">
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -34,7 +34,7 @@
             </svg>
             <h3>Financial</h3>
             <p>Get advice on managing finances, budgeting, and financial planning here.</p>
-            <button>Find Peer</button>
+            <button (click)="goToPage('find')">Find Peer</button>
         </div>
         <div class="problem">
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -42,7 +42,7 @@
             </svg>
             <h3>Educational</h3>
             <p>Seek help with academic challenges, career planning, and learning strategies.</p>
-            <button>Find Peer</button>
+            <button (click)="goToPage('find')">Find Peer</button>
         </div>
         <div class="problem">
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@
             </svg>
             <h3>Personal</h3>
             <p>Find support for personal growth, relationships, and life challenges all here.</p>
-            <button>Find Peer</button>
+            <button (click)="goToPage('find')">Find Peer</button>
         </div>
     </div>
 </section>
