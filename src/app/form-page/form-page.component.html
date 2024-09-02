@@ -1,1 +1,106 @@
-<p>form-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Application Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Professional Application Form</h1>
+        <form action="/submit-form" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required aria-label="Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required aria-label="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="social-profile">Social Profile Page URL:</label>
+                    <input type="url" id="social-profile" name="social-profile" placeholder="Enter your social profile page URL" required aria-label="Social Profile Page URL">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Professional Background</legend>
+                <div class="form-group">
+                    <label for="professional-background">Professional Background:</label>
+                    <textarea id="professional-background" name="professional-background" placeholder="Describe your professional background" required aria-label="Professional Background"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="highest-degree">Highest Degree:</label>
+                    <input type="text" id="highest-degree" name="highest-degree" placeholder="Enter your highest degree" required aria-label="Highest Degree">
+                </div>
+                <div class="form-group">
+                    <label for="field-of-study">Field of Study:</label>
+                    <input type="text" id="field-of-study" name="field-of-study" placeholder="Enter your field of study" required aria-label="Field of Study">
+                </div>
+                <div class="form-group">
+                    <label for="mentorship-experience">Previous Mentorship Experience:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="mentorship-experience-yes" name="mentorship-experience" value="yes" required aria-label="Previous Mentorship Experience Yes">
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" id="mentorship-experience-no" name="mentorship-experience" value="no" aria-label="Previous Mentorship Experience No">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mentorship-description">Brief Description of Mentorship Experience:</label>
+                    <textarea id="mentorship-description" name="mentorship-description" placeholder="Describe your mentorship experience" aria-label="Brief Description of Mentorship Experience"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Domain:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="domain-education" name="domain" value="education">
+                            Education
+                        </label>
+                        <label>
+                            <input type="checkbox" id="domain-health" name="domain" value="health">
+                            Health/Medical
+                        </label>
+                        <label>
+                            <input type="checkbox" id="domain-finance" name="domain" value="finance">
+                            Finance
+                        </label>
+                        <label>
+                            <input type="checkbox" id="domain-emotional" name="domain" value="emotional">
+                            Emotional Support/Life Challenges
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-time">Preferred Time for Mentorship:</label>
+                    <input type="text" id="preferred-time" name="preferred-time" placeholder="e.g., Weekdays, Morning" required aria-label="Preferred Time for Mentorship">
+                </div>
+                <div class="form-group">
+                    <label for="weekly-hours">Estimated Weekly Hours Available:</label>
+                    <input type="text" id="weekly-hours" name="weekly-hours" placeholder="e.g., 1-5 hours, 5-10 hours" required aria-label="Estimated Weekly Hours Available">
+                </div>
+                <div class="form-group">
+                    <label for="why-mentor">Why Do You Want to Be a Mentor:</label>
+                    <textarea id="why-mentor" name="why-mentor" placeholder="Briefly explain why you want to be a mentor" required aria-label="Why Do You Want to Be a Mentor"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="agreement" name="agreement" required aria-label="Agreement to Platform Guidelines">
+                        I agree to the platform guidelines
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

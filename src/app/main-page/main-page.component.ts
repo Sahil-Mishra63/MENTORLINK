@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,8 +10,8 @@ export class MainPageComponent {
 
     constructor(private router: Router) {}
 
-    goToProfilePage(){
-      this.router.navigate(['/profile'])
+    goToProfilePage(pageName:string):void{
+      this.router.navigate([`${pageName}`]);
     }
 
 }

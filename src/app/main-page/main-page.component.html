@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Choose your problem and find relevant guidance on health, financial, educational, and personal issues with Mentor Link.">
-    <meta name="keywords" content="mentor, community, health, financial, educational, personal, guidance">
-    <title>Choose Your Problem</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
-</head>
 <body>
     <header>
             <h1>MentorLink</h1>
         <div class="nav-buttons">
-            <button (click)="goToProfilePage()">Community</button>
+            <button>Community</button>
             <button onclick="window.location.href='find-mentor.html'">Find Mentor</button>
-            <div class="profile-pic" (click)="goToProfilePage()" routerLink="/profile">
+            <div class="profile-pic" (click)="goToProfilePage('profile')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.87 0-7 3.13-7 7h2c0-3.31 2.69-6 6-6s6 2.69 6 6h2c0-3.87-3.13-7-7-7z"/></svg>
             </div>
         </div>
@@ -49,4 +41,3 @@
         </div>
     </section>
 </body>
-</html>

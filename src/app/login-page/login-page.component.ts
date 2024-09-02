@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class LoginPageComponent {
   isLoginMode = true; //if it is true it will show login otherwise register
 
-  toggleMode(){
+  toggleMode(event: Event){
+    event.preventDefault();
     this.isLoginMode = !this.isLoginMode;
   }
 
