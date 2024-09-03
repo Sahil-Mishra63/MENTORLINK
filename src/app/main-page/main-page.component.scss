@@ -65,6 +65,8 @@ section h2 {
     font-weight: 600; 
     font-family: 'Roboto', sans-serif; /* Applying the new font */
     filter: drop-shadow(5px 6px 7px green);
+
+
 }
 .problem-container { 
     display: grid; 
@@ -72,7 +74,9 @@ section h2 {
     gap: 20px; 
     max-width: 1200px; 
     margin: 0 auto; 
-    
+
+
+
 }
 .problem { 
     border: 1px solid #e1e4e8; 

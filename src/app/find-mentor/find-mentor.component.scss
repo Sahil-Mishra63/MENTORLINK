@@ -1,30 +1,157 @@
-.container{
-    max-width: 600px;
-    background-color: rebeccapurple;
-    height: 30rem;
-    font-size: 25px;
+// body {
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     background-color: #f4f4f4;
+//     margin: 0;
+//     padding: 20px;
+// }
+
+.container {
     display: flex;
     flex-direction: column;
+    gap: 30px; /* Increased gap for better spacing */
+    max-width: 1200px; /* Increased width for more content space */
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+}
+
+.box-title {
+    font-size: 32px; /* Larger font size for titles */
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase; /* Make the title uppercase */
+}
+
+.mentor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mentor {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: center;
-    justify-content: center;
-    margin: auto;
-    overflow-y: auto;
+    justify-content: space-between; /* Space between details and slots */
 }
 
-.mentor-online{
-    background-color: aqua;
-    width: 500px;
-    height: 15rem;
+.mentor img {
+    width: 100px; /* Fixed size for images */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
-.mentor-offline{
-    background-color: beige;
-    width: 500px;
-    height: 15rem;
+.mentor-info {
+    flex: 1;
+    margin-right: 20px;
 }
 
-.content{
-    background-color: yellow;
-    // display: inline;
-    border: 2px solid black;
+.mentor-info h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.mentor-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.rating {
+    font-size: 18px;
+    color: gold; /* Color for rating numbers */
+}
+
+.rating span {
+    font-weight: bold;
+}
+
+.slots {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.slots div {
+    margin-bottom: 10px;
+}
+
+.slots select,
+.slots button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.slots button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.slots button:hover {
+    background-color: #218838;
+}
+
+.chat-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chat-button i {
+    font-size: 24px; /* Icon size */
+}
+
+.chat-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.box.offline {
+    background-color: #0056b3; /* Darker blue for offline mentors */
+}
+
+.box.online {
+    background-color: #3399ff; /* Lighter blue for online mentors */
+}
+
+.box:hover {
+    background-color: #004080; /* Darker blue for both boxes on hover */
+}
+
+.box.online:hover {
+    background-color: #007BFF; /* Default blue for online box on hover */
 }
